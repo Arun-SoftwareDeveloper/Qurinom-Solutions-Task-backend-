@@ -25,11 +25,8 @@ app.use(cors());
 app.use(bodyParser.json());
 app.use("/", UserRoutes);
 
-const cardRoutes = require("./Routes/CardRoutes");
-
-app.use("/cards", cardRoutes);
 app.get("/", (req, res) => {
-  res.send("Hello");
+  res.send("Here we developed the Backend Server!!!");
 });
 
 const Port = 4000;
